@@ -20,9 +20,10 @@ Area 51, Death Valley, Aruba
 spontaneously combusted, rapidly sublimated, evaporated instantly
 */
 
-var insertX = ['Donald Trump','Jackie Chan','Santa Claus'];
-var insertY = ['Area 51','Death Valley','Aruba'];
+var insertX = ['Donald Trump','Jackie Chan','Santa Claus','Superman','Lebron James','Jon Snow','Mario', 'Dr.Oz','Nazgul','Justin Bieber','Elvis Presley','William Wallace','Red kit','Garfield',];
+var insertY = ['Area 51','Death Valley','Aruba','Istanbul','Cuba','Moscow','Moon','Africa','Japan','Blackhole'];
 var insertZ =['spontaneously combusted', 'rapidly sublimated', 'evaporated instantly'] ;
+var extra = ['I dont feel very well that he said','He said winter is coming !',' maybe we will see the truth one day !','come on guys you should think about this mystery ','as beatles say all he need is love ']
 // FUNCTIONS
 
 /* STEP 2: have a look at the following function - if you call this function and pass it an array, it will return one of the elements of that array randomly */
@@ -45,8 +46,8 @@ var newStory = storyText;
 	var xItem =randomValueFromArray(insertX);
  	var yItem =randomValueFromArray(insertY);
 	var zItem =randomValueFromArray(insertZ);
-	 
-	console.log(xItem, yItem, zItem);
+	var extraItem=randomValueFromArray(extra);
+	console.log(xItem, yItem, zItem, extraItem);
 
 
 	var pass = /:insertx:/gi;
@@ -57,6 +58,8 @@ var newStory = storyText;
 	newStory = newStory.replace (':inserty:', yItem);
 
 	newStory = newStory.replace (':insertz:', zItem);
+
+	newStory = newStory.replace('it was a hot day', extraItem)
 	console.log(newStory);
 
 	
@@ -74,8 +77,9 @@ var newStory = storyText;
 		newStory = newStory.replace('300 pounds', weight + "kg");
 		// STEP 12a: Create a variable called temp and convert °F to °C ... the formula for conversion is °C = (°F - 32) x 5/9
 		var temp = ((94-32)*5)/9;
+		var myTrunc = Math.trunc( temp );    // to get rid of decimals
 		// STEP 12b: Replace the string '94 fahrenheit' with the updated temperature in °C
-		newStory= newStory.replace('94 farenheit',temp + 'Celcius'); 	
+		newStory= newStory.replace('94 farenheit',myTrunc + 'Celcius'); 	
 
   }
 	/* STEP 13: Make the textContent property of the story variable (which references the paragraph) equal to newStory */
