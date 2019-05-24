@@ -23,7 +23,7 @@ spontaneously combusted, rapidly sublimated, evaporated instantly
 var insertX = ['Donald Trump','Jackie Chan','Santa Claus','Superman','Lebron James','Jon Snow','Mario', 'Dr.Oz','Nazgul','Justin Bieber','Elvis Presley','William Wallace','Red kit','Garfield',];
 var insertY = ['Area 51','Death Valley','Aruba','Istanbul','Cuba','Moscow','Moon','Africa','Japan','Blackhole'];
 var insertZ =['spontaneously combusted', 'rapidly sublimated', 'evaporated instantly'] ;
-var extra = ['I dont feel very well that he said','He said winter is coming !',' maybe we will see the truth one day !','come on guys you should think about this mystery ','as beatles say all he need is love ']
+var extra = ['I dont feel very well that he said','He said winter is coming so I need to eat more lol !',' maybe we will see the truth one day !','come on guys you should think about this mystery ','as beatles say all he need is love ']
 // FUNCTIONS
 
 /* STEP 2: have a look at the following function - if you call this function and pass it an array, it will return one of the elements of that array randomly */
